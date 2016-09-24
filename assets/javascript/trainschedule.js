@@ -54,3 +54,6 @@ fb.on("child_added", function(snapshot) {
     var nextTrain = moment().add(tMinutesTillTrain, "minutes")
     console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"))
   }
+  
+  $('#display').append('<tr><td>' name '</tr></td>' + '<tr><td>' destination '</tr></td>' + '<tr><td>' nextTrain '</tr></td>' + '<tr><td>' frequency '</tr></td>' + '<tr><td>' tMinutesTillTrain '</tr></td>')
+  
